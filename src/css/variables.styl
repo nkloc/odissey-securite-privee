@@ -1,0 +1,34 @@
+colors = {
+  black: #212121,
+  blue: #14274e,
+  nightblue: #394867,
+  white: #f1f6f9,
+  gray: #9ba4b4,
+  green: #1C8A92,
+  red: #BE5683,
+}
+
+$black-color = colors.black
+$blue-color = colors.blue
+$nightblue-color = colors.nightblue
+$white-color = colors.white
+$gray-color = colors.gray
+$green-color = colors.green
+$red-color = colors.red
+
+$font = 'Hind Vadodara', sans-serif;
+
+tablet = "only screen and (max-width: 1200px)"
+tablet-up = "only screen and (min-width: 1199px)"
+mobile = "only screen and (max-width: 850px)"
+mobile-up = "only screen and (min-width: 849px)"
+
+.mobile-only
+	display none
+	@media mobile 
+		display block
+
+.desktop-only
+  display none
+  @media mobile-up
+    display block
