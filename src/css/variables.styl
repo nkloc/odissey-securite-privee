@@ -1,5 +1,5 @@
 colors = {
-  black: #212121,
+  black: #222831,
   blue: #14274e,
   nightblue: #394867,
   white: #f1f6f9,
@@ -30,5 +30,10 @@ mobile-up = "only screen and (min-width: 849px)"
 
 .desktop-only
   display none
-  @media mobile-up
+  @media tablet-up
+    display block
+
+.tablet-only
+  display none
+  @media tablet
     display block
