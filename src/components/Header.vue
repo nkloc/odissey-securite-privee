@@ -32,19 +32,22 @@
                 </a>
             </div>
         </div>
-
-        <div class="menu-burger-active" v-if="showBurger">
-            <ul>
-                <li class="active1">Accueil</li>
-                <li>Nos références</li>
-                <li>À propos</li>
-                <li>Nous contacter</li>
-            </ul>
-            <div>
-                <img src="@/assets/links/facebook.svg" alt="Facebook">
-                <img src="@/assets/links/linkedin.svg" alt="Linkedin">
+        
+        <Transition>
+            <div class="menu-burger-active" v-if="showBurger">
+                <ul>
+                    <li class="active1">Accueil</li>
+                    <li>Nos références</li>
+                    <li>À propos</li>
+                    <li>Nous contacter</li>
+                </ul>
+                <div>
+                    <img src="@/assets/links/facebook.svg" alt="Facebook">
+                    <img src="@/assets/links/linkedin.svg" alt="Linkedin">
+                </div>
             </div>
-        </div>
+        </Transition>
+        
     </header>
 </template>
 
@@ -89,8 +92,7 @@ header {
     justify-content space-between
     align-items center
     padding 20px
-    background-color transparent
-    z-index 1
+    z-index 50
 }
 .perfectWidth{
     width calc(50% - 80px)
@@ -100,6 +102,10 @@ ul {
     list-style-type none
     li {
         margin-left 16px
+        cursor pointer
+        &:hover{
+            text-decoration: underline
+        }
     }
     .active {
         font-weight 600
@@ -122,6 +128,9 @@ img {
         img {
             width 20px
             height 20px
+            &:hover{
+                filter: invert(55%) sepia(24%) saturate(1327%) hue-rotate(186deg) brightness(103%) contrast(103%);
+            }
         }
     }
 }
@@ -136,7 +145,7 @@ img {
 .fixed {
     position fixed
     background white
-    margin-top 0
+    top 0
     width 100%
     height 100%
     padding 20px 0
@@ -225,5 +234,14 @@ img {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
+}
+
+//transition animation
+.v-enter-active,{
+  transition: opacity 1s ease;
+}
+
+.v-enter-from,{
+  opacity: 0;
 }
 </style>
