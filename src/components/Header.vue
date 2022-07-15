@@ -3,8 +3,8 @@
         <div class="desktop-only perfectWidth">
             <ul>
                 <li class="active1">Accueil</li>
-                <li>Nos références</li>
                 <li>À propos</li>
+                <li>Nos références</li>
                 <li>Nous contacter</li>
             </ul>
         </div>
@@ -37,8 +37,8 @@
             <div class="menu-burger-active" v-if="showBurger">
                 <ul>
                     <li class="active1">Accueil</li>
-                    <li>Nos références</li>
                     <li>À propos</li>
+                    <li>Nos références</li>
                     <li>Nous contacter</li>
                 </ul>
                 <div>
@@ -104,7 +104,8 @@ ul {
         margin-left 16px
         cursor pointer
         &:hover{
-            text-decoration: underline
+            color: $blue-color;
+            transition: color 0.5s ease;
         }
     }
     .active {
@@ -187,6 +188,10 @@ img {
             width 50px
             height 50px
             margin 25px
+            cursor pointer
+            &:hover {
+                filter: invert(55%) sepia(24%) saturate(1327%) hue-rotate(186deg) brightness(103%) contrast(103%);
+            }
         }
     }
 }
