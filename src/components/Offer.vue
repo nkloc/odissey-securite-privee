@@ -2,7 +2,7 @@
     <section class="offer">
         <div class="top">
             <h2 class="h2Title">
-                <b>Notre Offre</b> <br> d'Agents De Sécurité
+                <b>Notre Offre</b><br>d'Agents De Sécurité
             </h2>
         </div>
         <div class="bottom">
