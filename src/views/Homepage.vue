@@ -4,6 +4,7 @@
     <Offer />
     <About />
     <References />
+    <Opinions />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Home from '@/components/Home.vue'
 import Offer from '@/components/Offer.vue'
 import About from '@/components/About.vue'
 import References from '@/components/References.vue'
+import Opinions from '@/components/Opinions.vue'
 
 export default {
   name: 'Homepage',
@@ -20,7 +22,8 @@ export default {
     Home,
     Offer,
     About,
-    References
+    References,
+    Opinions
   }
 }
 </script>

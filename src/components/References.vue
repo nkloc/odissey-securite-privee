@@ -10,12 +10,12 @@
         </div>
         <div class="bottom">
             <div class="ref-container">
-                <Reference imageName="desktop" title="Monoprix"/>
-                <Reference imageName="desktop" title="Auchan"/>
-                <Reference imageName="desktop" title="Leclerc"/>
-                <Reference imageName="desktop" title="Roissy"/>
-                <Reference imageName="desktop" title="Roissy"/>
-                <Reference imageName="desktop" title="Roissy"/>
+                <Reference imageName="auchan" title="Monoprix"/>
+                <Reference imageName="auchan" title="Auchan"/>
+                <Reference imageName="auchan" title="Leclerc"/>
+                <Reference imageName="auchan" title="Roissy"/>
+                <Reference imageName="auchan" title="Roissy"/>
+                <Reference imageName="auchan" title="Roissy"/>
             </div>
         </div>
     </section>
@@ -50,6 +50,9 @@ import Reference from '@/components/Reference.vue'
         top: 0;
         right: 0;
         border-radius: 400px 0px 0px 0px;
+        @media tablet {
+            display: none;
+        }
     }
 }
 .top{
@@ -62,20 +65,28 @@ import Reference from '@/components/Reference.vue'
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding 0 30px;
     }
 }
 h2 {
     text-align: left;
+    @media tablet {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 p {
+    width: 66%;
     font-weight: 400;
     font-size: 17px;
     line-height: 146.3%;
     letter-spacing: 0.02em;
-    max-width: 500px;
-    text-align: right;
+    margin: 25px 0;
     @media tablet {
+        max-width: 500px;
         text-align: justify;
+        margin: 30px 0;
+        width: 100%;
     }
 }
 .bottom {
@@ -88,6 +99,9 @@ p {
         padding-left 30%;
         .reference {
             margin: 0 15px;
+        }
+        @media tablet {
+            padding-left 0%;
         }
     }
 }
