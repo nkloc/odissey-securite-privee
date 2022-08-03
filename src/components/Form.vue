@@ -34,6 +34,7 @@
             <input type="submit" value="Envoyer ma demande">
       </div>
       <div v-if="submitted" class="submitted">
+            <img src="@/assets/svg/bluecheck.svg" alt="check">
             <p>Votre demande a bien été envoyée.</p>
       </div>
     </fieldset>
@@ -75,13 +76,11 @@ export default {
                 const Airtable = require('airtable');
                 const base = new Airtable({apiKey: this.airtableApiKey}).base('appEXsFOIcOc7sEoW');
 
-                base('Demandes Clients').create(formData, function(err, record) {
+                base('Demandes Clients').create(formData, function(err) {
                     if (err) {
                         console.error(err);
                         return;
                     }
-                    alert('Merci pour votre message !');
-                    console.log(record.getId());
                 });
             }
             this.sending = false;
@@ -201,6 +200,30 @@ textarea::placeholder {
     @media tablet {
         justify-content: center;
         margin-top: 10px;
+    }
+}
+.submitted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: $green-color;
+    border-radius: 4px;
+    height: 66px;
+    width: 325px;
+    img {
+        width: 30px;
+        height: auto;
+        margin-right 12px;
+    }
+    p {
+        font-size: 16px;
+        font-weight bold;
+        color: $white-color;
+    }
+    @media tablet {
+        margin: 0 auto;
     }
 }
 </style>
