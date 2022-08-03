@@ -24,10 +24,7 @@
     
         <div class="desktop-only perfectWidth">
             <div class="links">
-                <a href="https://www.google.com">
-                    <img src="@/assets/links/facebook.svg" alt="Facebook">
-                </a>
-                <a href="https://www.google.com">
+                <a href="https://www.linkedin.com/in/jamel-hamaidia-5b4972239/">
                     <img src="@/assets/links/linkedin.svg" alt="Linkedin">
                 </a>
             </div>
@@ -42,8 +39,9 @@
                     <li>Nous contacter</li>
                 </ul>
                 <div>
-                    <img src="@/assets/links/facebook.svg" alt="Facebook">
-                    <img src="@/assets/links/linkedin.svg" alt="Linkedin">
+                    <a href="https://www.linkedin.com/in/jamel-hamaidia-5b4972239/">
+                        <img src="@/assets/links/linkedin.svg" alt="Linkedin">
+                    </a>
                 </div>
             </div>
         </Transition>
