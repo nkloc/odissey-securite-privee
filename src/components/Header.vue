@@ -2,17 +2,17 @@
     <header :class="{fixed: showBurger }">
         <div class="desktop-only perfectWidth">
             <ul>
-                <li class="active1">Accueil</li>
-                <li>À propos</li>
-                <li>Nos références</li>
-                <li>Nous contacter</li>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#references">Nos références</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
             </ul>
         </div>
 
         <div class="containerLogoBurger">
             <img :class="{marginLeft: showBurger}" src="@/assets/logo.svg" alt="Logo d'Odissey sécurité privée">
             <div :class="{marginRight: showBurger}" class="tablet-only">
-                <button class="menu" @click.prevent="toggleBurger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <button id="button" class="menu" @click.prevent="toggleBurger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                     <svg width="50" height="50" viewBox="0 0 100 100">
                         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                         <path class="line line2" d="M 20,50 H 80" />
@@ -33,10 +33,10 @@
         <Transition>
             <div class="menu-burger-active" v-if="showBurger">
                 <ul>
-                    <li class="active1">Accueil</li>
-                    <li>À propos</li>
-                    <li>Nos références</li>
-                    <li>Nous contacter</li>
+                    <li><a @click.prevent="scrollToAndClose('home')">Accueil</a></li>
+                    <li><a @click.prevent="scrollToAndClose('about')">À propos</a></li>
+                    <li><a @click.prevent="scrollToAndClose('references')">Nos références</a></li>
+                    <li><a @click.prevent="scrollToAndClose('contact')">Nous contacter</a></li>
                 </ul>
                 <div>
                     <a href="https://www.linkedin.com/in/jamel-hamaidia-5b4972239/">
@@ -79,7 +79,19 @@
             onResize() {
                 this.windowWidth = window.innerWidth
                 this.windowHeight = window.innerHeight
-            }
+            },
+            buttonClicked() {
+                const element = document.getElementById('button')
+                element.classList.toggle('opened');element.setAttribute('aria-expanded', element.classList.contains('opened'))
+            },
+            jumpTo(anchor) {
+                window.location.href = "#"+anchor
+            },
+            scrollToAndClose(anchor) {
+                this.jumpTo(anchor);
+                this.buttonClicked();
+                this.showBurger = false;
+            },
         },
     }
 </script>
@@ -98,9 +110,18 @@ header {
 ul {
     display flex
     list-style-type none
+    a {
+        text-decoration none
+        color: $black-color
+        &:hover{
+            color: $blue-color;
+            transition: color 0.5s ease;
+        }
+    }
     li {
         margin-left 16px
         cursor pointer
+        color: $black-color
         &:hover{
             color: $blue-color;
             transition: color 0.5s ease;

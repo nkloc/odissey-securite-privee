@@ -2,8 +2,8 @@
   <div class="home">
     <Home />
     <Offer />
-    <About />
-    <References />
+    <About id="about" />
+    <References id="references" />
     <Opinions />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <Header />
   <router-view/>
-  <Footer />
+  <Footer id="contact" />
 </template>
 
 <style lang="stylus">
