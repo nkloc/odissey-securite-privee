@@ -2,7 +2,7 @@
   <section class="home">
     <div class="left">
       <h1>Odissey <br> Sécurité <br> Privée</h1>
-      <span>Partenaire de groupe spécialisée dans la surveillance humaine basée en Île-De-France, dont l'ambition est d'offrir à ses clients <b>un panel d'agents qualifiés qui vous protègeront des incendies, des agressions, des risques terroristes...</b></span>
+      <span>Partenaire de groupe spécialisé dans la surveillance humaine basée en Île-De-France, dont l'ambition est d'offrir à ses clients <b>un panel d'agents qualifiés qui vous protègeront des incendies, des agressions, des risques terroristes...</b></span>
       <Button text="Découvrir" />
     </div>
     <div class="right">

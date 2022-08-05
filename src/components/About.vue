@@ -8,21 +8,27 @@
                 <b>À Propos</b> <br> d’Odissey
             </h2>
             <p>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Odissey Sécurité Privée est basée en Île-de-France et c'est là que nous avons développé une solide expérience dans le domaine de la sécurité des personnes, des biens et des lieux.
+                <br><br>
+                Notre équipe est composée d’agents expérimentés, ayant acquis une grande expertise dans le domaine de la sécurité privée et de la protection des personnes.
+                <br><br>
+                Nous sommes à votre écoute pour vous rencontrer et discuter de vos besoins, afin de vous offrir la prestation qui répondra parfaitement à vos attentes.
+                <br><br>
+               <b class="important-text"> Nous vous proposons des prestations personnalisées sur mesure, adaptées à vos besoins et à votre situation. </b>
             </p>
-            <Button text="En savoir plus" />
+            <!-- <Button text="En savoir plus" /> -->
         </div>
         
     </section>
 </template>
 
 <script>
-import Button from '@/components/kit/Button.vue'
+// import Button from '@/components/kit/Button.vue'
     export default {
         name: 'Homepage',
-        components: {
-            Button
-        }
+        // components: {
+        //     Button
+        // }
     }
 </script>
 
@@ -40,20 +46,26 @@ import Button from '@/components/kit/Button.vue'
     
 }
 img {
-    width: 50vw;
+    width: 40vw;
     height auto;
+    @media tablet {
+        width: 70%;
+    }
+}
+.important-text{
+    font-weight 600;
 }
 .right {
-    width: 40vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
     p {
-        width: 66%;
+        width: 80%;
         font-weight: 400;
-        font-size: 17px;
+        font-size: 16px;
         line-height: 146.3%;
         letter-spacing: 0.02em;
         margin: 25px 0;

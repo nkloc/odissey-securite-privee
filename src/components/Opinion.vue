@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: #EEEEEE;
+    background: $gray-color;
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     padding 20px;

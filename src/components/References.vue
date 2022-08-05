@@ -5,17 +5,15 @@
                 <b>Nos références</b> <br> principales
             </h2>
             <p>
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                Ils nous ont fait confiance. Pourquoi pas vous ?
             </p>
         </div>
         <div class="bottom">
             <div class="ref-container">
-                <Reference imageName="auchan" title="Monoprix"/>
+                <Reference imageName="monoprix" title="Monoprix"/>
                 <Reference imageName="auchan" title="Auchan"/>
-                <Reference imageName="auchan" title="Leclerc"/>
-                <Reference imageName="auchan" title="Roissy"/>
-                <Reference imageName="auchan" title="Roissy"/>
-                <Reference imageName="auchan" title="Roissy"/>
+                <Reference imageName="leclerc" title="Leclerc"/>
+                <Reference imageName="roissy" title="Roissy"/>
             </div>
         </div>
     </section>
@@ -59,7 +57,7 @@ import Reference from '@/components/Reference.vue'
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom 80px;
+    margin-bottom 30px;
     padding 0 50px;
     @media tablet {
         flex-direction: column;
@@ -82,6 +80,7 @@ p {
     line-height: 146.3%;
     letter-spacing: 0.02em;
     margin: 25px 0;
+    text-align: right;
     @media tablet {
         max-width: 500px;
         text-align: justify;

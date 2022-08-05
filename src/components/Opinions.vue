@@ -1,19 +1,19 @@
 <template>
     <section class="opinions">
         <h2 class="h2Title">
-            <b>Nos Avis</b> <br>
-            Ce que l'on dit de Nous
+            <b>Ils parlent</b> <br>
+            d'Odissey Sécurité Privée
         </h2>
         <div class="opinion-container">
             <Opinion
-                name="Stéphanie Lambert"
-                job="Directrice Commerciale d’Auchan"
-                text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                name="Dimitri KLOC"
+                job="Responsable Secteur chez France Gardiennage"
+                text="Je collabore depuis 8 ans avec Jamel Hamaidia, CEO d’Odissey Sécurité Privée. C’est une source fiable d’agents de sécurité de qualité, lorsque j’ai des besoins très spécifiques et périodiques."
             />
             <Opinion
                 name="Stéphanie Lambert"
                 job="Directrice Commerciale d’Auchan"
-                text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                text="Les agents d’Odissey Sécurité Privée sont très professionnels et respectueux du règlement des différents sites sur lesquels je fais appel à eux. Je recommande Odissey ! Vive Odissey !"
             />
         </div>
     </section>

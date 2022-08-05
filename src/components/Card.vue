@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     @media tablet {
         min-width: 0px;
         max-width: 260px;
@@ -73,6 +73,7 @@
         text-transform: uppercase;
         color: $black-color;
         margin: 20px 0;
+        text-align: left;
     }
     p {
         font-weight: 300;

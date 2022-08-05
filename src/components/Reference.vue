@@ -1,13 +1,7 @@
 <template>
     <div class="reference">
         <div class="top">
-            <img class="desktop-img" :src="require(`@/assets/png/${imageName}.png`)" :alt="title">
-            <img class="mobile-img" :src="require(`@/assets/png/${imageName}-mobile.png`)" :alt="title">
-        </div>
-        <div class="bottom">
-            <h3>
-                {{ title }}
-            </h3>
+            <img class="logo" :src="require(`@/assets/svg/logos/${imageName}.svg`)" :alt="title">
         </div>
     </div>
 </template>
@@ -46,13 +40,12 @@
 }
 .top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     width: 100%;
     img {
-        height: 180px;
-        width: auto;
+        width: 80%;
     }
     
 }
@@ -60,7 +53,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     border-radius: 10px;
     h3 {
         font-weight: 700;
