@@ -59,10 +59,10 @@ export default {
       content: '';
       display: block;
       width: 260px;
-      height: 15px;
+      height: 20px;
       position relative;
-      bottom: 22px;
-      left: 4.5px;
+      bottom: 32px;
+      left: 5px;
       background: $blue-color;
       z-index -1;
       @media tablet {

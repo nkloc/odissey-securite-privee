@@ -81,11 +81,15 @@ p {
     letter-spacing: 0.02em;
     margin: 25px 0;
     text-align: right;
+    white-space: nowrap;
     @media tablet {
         max-width: 500px;
-        text-align: justify;
+        text-align: center;
         margin: 30px 0;
         width: 100%;
+    }
+    @media mobile {
+        text-align: left;
     }
 }
 .bottom {
